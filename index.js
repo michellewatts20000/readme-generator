@@ -10,6 +10,12 @@ const promptUser = () => {
       type: 'input',
       name: 'title',
       message: 'What is your project`s title?',
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("You must enter a project title.");
+        }
+        return true;
+      }
     },
     {
       type: 'input',
