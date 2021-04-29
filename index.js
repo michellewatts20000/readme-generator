@@ -5,14 +5,13 @@ const util = require('util');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 const promptUser = () => {
-  return inquirer.prompt([
-    {
+  return inquirer.prompt([{
       type: 'input',
       name: 'title',
       message: 'What is your project`s title?',
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("You must enter a project title.");
+          return console.log("You must enter a project title.");
         }
         return true;
       }
@@ -34,7 +33,7 @@ const promptUser = () => {
         "MIT",
         "Mozilla",
         "Open"
-    ]
+      ]
     },
     // {
     //   type: 'input',
@@ -49,11 +48,6 @@ const promptUser = () => {
     // {
     //   type: 'input',
     //   name: 'screenshot',
-    //   message: 'If you have a url to a screenshot of your app, paste it here:',
-    // },
-    // {
-    //   type: 'input',
-    //   name: 'screenshot2',
     //   message: 'If you have a url to a screenshot of your app, paste it here:',
     // },
     // {
@@ -85,10 +79,13 @@ const promptUser = () => {
 const init = () => {
   promptUser()
     .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
-    .then(() => console.log('Successfully wrote a README.md'))
+    .then(() => {
+      console.log('Successfully wrote a README.md');
+
+    })
     .catch((err) => console.error(err));
 
-   
+
 };
 
 init();

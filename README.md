@@ -2,7 +2,7 @@
 
   ## License
 
-  [![License](https://img.shields.io/badge/license-Apache-green)]()
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
   test
@@ -20,7 +20,6 @@
   undefined
 
   ![screenshot](undefined)
-  ![screenshot](undefined)
 
   ## How to Contribute
   undefined
@@ -29,7 +28,9 @@
   undefined
 
   ## License
-  Apache
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]
+  https://opensource.org/licenses/Apache-2.0
+
 
   ## Questions
   [Github: undefined](https://github.com/undefined)
