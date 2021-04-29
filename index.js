@@ -45,11 +45,11 @@ const promptUser = () => {
     //   name: 'usage',
     //   message: 'How does someone use your app?',
     // },
-    // {
-    //   type: 'input',
-    //   name: 'screenshot',
-    //   message: 'If you have a url to a screenshot of your app, paste it here:',
-    // },
+    {
+      type: 'input',
+      name: 'screenshot',
+      message: 'If you have a url to a screenshot of your app, paste it here:',
+    },
     // {
     //   type: 'input',
     //   name: 'contribution',

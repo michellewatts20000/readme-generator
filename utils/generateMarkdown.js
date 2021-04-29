@@ -31,8 +31,8 @@ const generateMarkdown = (answers) =>
   `# ${answers.title}
 
   ## License
-
-  [![License](${renderLicenseSrc(answers.license)})](${renderLicenseLink(answers.license)})
+  [![License](${renderLicenseSrc(answers.license)})]()
+  
 
   ## Description
   ${answers.description}
@@ -49,9 +49,7 @@ const generateMarkdown = (answers) =>
   ## Usage
   ${answers.usage}
 
-  ![screenshot](${answers.screenshot})
-
-  ${answers.screenshot === "" ? 'markdown-code-for-image-without-url' : 'markdown-code-for-image-with-url'}
+  ${answers.screenshot === "" ? 'markdown-code-for-image-without-url' : `![screenshot](${answers.screenshot})`}
 
   ## How to Contribute
   ${answers.contribute}
@@ -60,14 +58,20 @@ const generateMarkdown = (answers) =>
   ${answers.tests}
 
   ## License
-  [![License](${renderLicenseSrc(answers.license)})]
-  ${renderLicenseLink(answers.license)}
+![License](${renderLicenseSrc(answers.license)})
+${renderLicenseLink(answers.license)}
+
+[Details of the license: (${renderLicenseLink(answers.license)})
 
 
   ## Questions
   [Github: ${answers.github}](https://github.com/${answers.github})
   [Email: ${answers.email}](mailto:${answers.email})
-
 `;
 
 module.exports = generateMarkdown;
+
+
+
+
+
