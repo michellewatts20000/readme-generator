@@ -87,6 +87,8 @@ const init = () => {
     .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
     .then(() => console.log('Successfully wrote a README.md'))
     .catch((err) => console.error(err));
+
+   
 };
 
 init();

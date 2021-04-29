@@ -2,7 +2,7 @@
 
   ## License
 
-  [![License](https://img.shields.io/badge/license-MIT-green)]()
+  [![License](https://img.shields.io/badge/license-Apache-green)]()
 
   ## Description
   test
@@ -29,7 +29,7 @@
   undefined
 
   ## License
-  MIT
+  Apache
 
   ## Questions
   [Github: undefined](https://github.com/undefined)
