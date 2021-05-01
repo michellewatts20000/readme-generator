@@ -77,7 +77,7 @@ const generateMarkdown = (answers) =>
   - [Installation](#installation)
   - [Usage](#usage)
   - [How to contribute](#contribute)
-  - [Tests](#tests)
+  ${answers.tests === "" ? '' : `- [Tests](#tests)`}
   - [License](#license)
   - [Questions](#questions)
 
@@ -92,8 +92,7 @@ const generateMarkdown = (answers) =>
   ## Contribute
   ${answers.contribution}
 
-  ## Tests
-  ${answers.tests}
+  ${answers.tests === "" ? '' : `## Tests ${answers.tests}`}
 
   ## License
 

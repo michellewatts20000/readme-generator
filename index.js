@@ -48,7 +48,7 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'screenshot',
-      message: 'If you have a url to a screenshot of your application, paste it here:',
+      message: 'If you have a url to a screenshot of your application, paste it here, or hit enter to skip through.',
     },
     {
       type: 'input',
@@ -58,7 +58,7 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'tests',
-      message: 'How do you run tests on your application?',
+      message: 'How do you run tests on your application? (If there are no tests hit enter to skip through.)',
     },
     {
       type: 'input',
