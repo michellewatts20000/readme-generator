@@ -1,7 +1,7 @@
 # test
 
-  <a href="https://www.gnu.org/licenses/gpl-3.0">
-  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"></a>
+  <a href="https://opensource.org/licenses/MPL-2.0">
+  <img src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg"></a>
 
   ## Description
   test
@@ -18,7 +18,7 @@
   test
 
   ## Usage
-  
+  test
 
   
 
@@ -29,13 +29,13 @@
 
   ## License
 
-<a href="https://www.gnu.org/licenses/gpl-3.0">
-<img src="https://img.shields.io/badge/License-GPLv3-blue.svg"></a>
+<a href="https://opensource.org/licenses/MPL-2.0">
+<img src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg"></a>
 
-Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+Each Contributor hereby grants you a world-wide, royalty-free, non-exclusive license.
 
 
   ## Questions
-  [Github: test](https://github.com/test)
+  [Github: michellewatts20000](https://github.com/michellewatts20000)
   <br>
-  [Email: test](mailto:test)
+  [Email: watts.e.michelle@gmail.com](mailto:watts.e.michelle@gmail.com)
