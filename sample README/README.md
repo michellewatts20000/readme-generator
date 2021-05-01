@@ -1,16 +1,16 @@
-# README Generator
+# Test Project
 
   <a href="https://opensource.org/licenses/MIT">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 
   ## Description
-  An application that creates high-quality READMEs quickly
+  A test project showing off all the different README generator options
 
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [How to contribute](#contribute)
-  
+  - [Tests](#tests)
   - [License](#license)
   - [Questions](#questions)
 
@@ -18,14 +18,16 @@
   run 'npm i'
 
   ## Usage
-  Download the repo, open the repo in VS code, open the integrated terminal on the index.js file, run 'npm i', run 'node index', answer the questions to generate your README.
+  Follow the steps on the main repo readme
 
-  ## Screenshot ![screenshot](https://i.ibb.co/zScfG7Q/screenshot.png)
+  ## Screenshot 
+  ![screenshot](https://i.ibb.co/zScfG7Q/screenshot.png)
 
   ## Contribute
-  They can email me on watts.e.michelle@gmail.com
+  By some way outlined here
 
-  
+  ## Tests 
+  run 'npm test'
 
   ## License
 

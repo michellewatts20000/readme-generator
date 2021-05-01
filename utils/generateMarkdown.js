@@ -89,12 +89,16 @@ const generateMarkdown = (answers) =>
   ## Usage
   ${answers.usage}
 
-  ${answers.screenshot === "" ? '' : `## Screenshot ![screenshot](${answers.screenshot})`}
+  ${answers.screenshot === "" ? '' : `## Screenshot 
+  ![screenshot](${answers.screenshot})`}
 
   ## Contribute
   ${answers.contribution}
 
-  ${answers.tests === "" ? '' : `## Tests ${answers.tests}`}
+  ${answers.tests === "" ? '' : 
+  
+  `## Tests 
+  ${answers.tests}`}
 
   ## License
 
