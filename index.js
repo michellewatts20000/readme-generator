@@ -1,9 +1,11 @@
+// load dependencies
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown")
 const util = require('util');
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// run inquirer questions
 const promptUser = () => {
   return inquirer.prompt([{
       type: 'input',
@@ -20,6 +22,12 @@ const promptUser = () => {
       type: 'input',
       name: 'description',
       message: 'Provide a short description explaining the what, why, and how of your project?',
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log("You must enter a description.");
+        }
+        return true;
+      }
     },
     {
       type: 'list',
@@ -39,11 +47,23 @@ const promptUser = () => {
       type: 'input',
       name: 'installation',
       message: 'What are the steps required to install your project?',
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log("You must enter an installation step.");
+        }
+        return true;
+      }
     },
     {
       type: 'input',
       name: 'usage',
       message: 'How does someone use your app?',
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log("You must tell people how to use your app.");
+        }
+        return true;
+      }
     },
     {
       type: 'input',
@@ -54,6 +74,12 @@ const promptUser = () => {
       type: 'input',
       name: 'contribution',
       message: 'How can others contribute to your project?',
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log("You must let people know how they can collaborate with you.");
+        }
+        return true;
+      }
     },
     {
       type: 'input',
@@ -64,18 +90,30 @@ const promptUser = () => {
       type: 'input',
       name: 'github',
       message: 'What is your GitHub username?',
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log("You must enter a GitHub username.");
+        }
+        return true;
+      }
     },
     {
       type: 'input',
       name: 'email',
       message: 'What is your email address?',
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log("You must enter your email address.");
+        }
+        return true;
+      }
     },
   ]);
 };
 
 
 
-// Bonus using writeFileAsync as a promise
+// creates a readme
 const init = () => {
   promptUser()
     .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
@@ -88,4 +126,5 @@ const init = () => {
 
 };
 
+// runs the init function
 init();

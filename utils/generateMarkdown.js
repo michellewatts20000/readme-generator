@@ -1,4 +1,4 @@
-// Licenses in an array
+// All inquirer license options in an array
 const licenseList = [{
     name: "Apache",
     src: "https://img.shields.io/badge/License-Apache%202.0-blue.svg",
@@ -63,6 +63,8 @@ function renderLicenseDescription(answers) {
   return licenseLink.description
 }
 
+
+// generates a readme from the inquirer answers
 const generateMarkdown = (answers) =>
 
   `# ${answers.title}
