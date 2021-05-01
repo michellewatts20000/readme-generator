@@ -9,8 +9,8 @@
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Screenshot](#screenshot)
   - [How to contribute](#contribute)
+  
   - [License](#license)
   - [Questions](#questions)
 
@@ -20,12 +20,12 @@
   ## Usage
   Download the repo, open the repo in VS code, open the integrated terminal on the index.js file, run 'npm i', run 'node index', answer the questions to generate your README.
 
-  ## Screenshot 
-  <a name="screenshot"></a>
-  ![screenshot](https://i.ibb.co/zScfG7Q/screenshot.png)
+  ## Screenshot ![screenshot](https://i.ibb.co/zScfG7Q/screenshot.png)
 
   ## Contribute
   They can email me on watts.e.michelle@gmail.com
+
+  
 
   ## License
 
@@ -39,9 +39,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
   [Github: michellewatts20000](https://github.com/michellewatts20000)
   <br>
   [Email: watts.e.michelle@gmail.com](mailto:watts.e.michelle@gmail.com)
-
-
-  ## Video demo
-  [WATCH](https://drive.google.com/file/d/1rTMyrAJEqdi7YwnfE0GLaZpRI8QdljoZ/view?usp=sharing)
-
-  *This README was made with the README generator.
