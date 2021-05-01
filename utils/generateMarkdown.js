@@ -7,7 +7,7 @@ const licenseList = [{
   {
     name: "MIT",
     src: "https://img.shields.io/badge/License-MIT-yellow.svg",
-    link: "https://creativecommons.org/licenses/by-nc/4.0/",
+    link: "https://creativecommons.org/licenses/by-nc/4.0",
   },
   {
     name: "Creative Commons",
@@ -18,6 +18,7 @@ const licenseList = [{
     name: "GNU",
     src: "https://img.shields.io/badge/License-GPLv3-blue.svg",
     link: "https://www.gnu.org/licenses/gpl-3.0",
+    description: "Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.",
   },
   {
     name: "ISC",
@@ -32,7 +33,7 @@ const licenseList = [{
   {
     name: "Open",
     src: "https://img.shields.io/badge/License-ODC_BY-brightgreen.svg",
-    link: "https://opendatacommons.org/licenses/by/",
+    link: "https://opendatacommons.org/licenses/by",
   }
 
 ];
@@ -51,13 +52,17 @@ function renderLicenseSrc(answers) {
   return licenseLink.src
 }
 
+function renderLicenseDescription(answers) {
+  const licenseLink = licenseList.find(item => item.name === answers)
+  return licenseLink.description
+}
+
 const generateMarkdown = (answers) =>
 
   `# ${answers.title}
 
-  ## License
-  [![License](${renderLicenseSrc(answers.license)})]()
-  
+  <a href="${renderLicenseLink(answers.license)}">
+  <img src="${renderLicenseSrc(answers.license)}"></a>
 
   ## Description
   ${answers.description}
@@ -65,8 +70,10 @@ const generateMarkdown = (answers) =>
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
+  - [How to contribute](#contribute)
+  - [Tests](#tests)
   - [License](#license)
+  - [Questions](#questions)
 
   ## Installation
   ${answers.installation}
@@ -76,27 +83,24 @@ const generateMarkdown = (answers) =>
 
   ${answers.screenshot === "" ? 'markdown-code-for-image-without-url' : `![screenshot](${answers.screenshot})`}
 
-  ## How to Contribute
-  ${answers.contribute}
+  ## Contribute
+  ${answers.contribution}
 
   ## Tests
   ${answers.tests}
 
   ## License
-![License](${renderLicenseSrc(answers.license)})
-${renderLicenseLink(answers.license)}
 
-[Details of the license: (${renderLicenseLink(answers.license)})
+  <a href="${renderLicenseLink(answers.license)}">
+<img src="${renderLicenseSrc(answers.license)}"></a>
+
+${renderLicenseDescription(answers.license)}
 
 
   ## Questions
   [Github: ${answers.github}](https://github.com/${answers.github})
+  <br>
   [Email: ${answers.email}](mailto:${answers.email})
 `;
 
 module.exports = generateMarkdown;
-
-
-
-
-
