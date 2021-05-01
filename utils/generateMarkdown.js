@@ -7,7 +7,32 @@ const licenseList = [{
   {
     name: "MIT",
     src: "https://img.shields.io/badge/License-MIT-yellow.svg",
+    link: "https://creativecommons.org/licenses/by-nc/4.0/",
+  },
+  {
+    name: "Creative Commons",
+    src: "https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg",
     link: "https://opensource.org/licenses/MIT",
+  },
+  {
+    name: "GNU",
+    src: "https://img.shields.io/badge/License-GPLv3-blue.svg",
+    link: "https://www.gnu.org/licenses/gpl-3.0",
+  },
+  {
+    name: "ISC",
+    src: "https://img.shields.io/badge/License-ISC-blue.svg",
+    link: "https://opensource.org/licenses/ISC",
+  },
+  {
+    name: "Mozilla",
+    src: "https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg",
+    link: "https://opensource.org/licenses/MPL-2.0",
+  },
+  {
+    name: "Open",
+    src: "https://img.shields.io/badge/License-ODC_BY-brightgreen.svg",
+    link: "https://opendatacommons.org/licenses/by/",
   }
 
 ];

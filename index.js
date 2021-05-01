@@ -27,7 +27,7 @@ const promptUser = () => {
       message: 'What license do you want to give your project?',
       choices: [
         "Apache",
-        "Academic",
+        "Creative Commons",
         "GNU",
         "ISC",
         "MIT",
