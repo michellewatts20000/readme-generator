@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 
   ## Description
-  An application that creates high-quality READMEs quickly
+  This application creates high-quality READMEs quickly.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -18,14 +18,14 @@
   run 'npm i'
 
   ## Usage
-  Download the repo, open the repo in VS code, open the integrated terminal on the index.js file, run 'npm i', run 'node index', answer the questions to generate your README.
+  Download the repo, open the repo in VS code, open the integrated terminal on the index.js file, run 'npm i', run 'node index', answer the questions to generate your README.md file.
 
   ## Screenshot 
   <a name="screenshot"></a>
   ![screenshot](https://i.ibb.co/zScfG7Q/screenshot.png)
 
   ## Contribute
-  They can email me on watts.e.michelle@gmail.com
+  You can email me on watts.e.michelle@gmail.com
 
   ## License
 
